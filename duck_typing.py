@@ -1,4 +1,6 @@
 # If it walks like a duck, it's a duck
+# When ojects have a method with the same name, it can be called
+# on both, regardless of the type of object
 
 import random
 
