@@ -1,6 +1,6 @@
 import pytest 
 
-from wallet import Wallet, InsufficientAmount 
+from wallet import Wallet, InsufficientAmount, NegativeAmount 
 
  
 # adding 10 to the constructor, means we will not actually be testing the default amount
