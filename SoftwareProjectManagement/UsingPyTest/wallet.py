@@ -1,6 +1,8 @@
 class InsufficientAmount(Exception): 
   pass 
 
+class NegativeAmount(Exception):
+  pass
    
 class Wallet(object): 
   def __init__(self, initial_amount=0): 
@@ -12,4 +14,6 @@ class Wallet(object):
     self.balance -= amount 
 
   def add_cash(self, amount): 
+    if amount < 0:
+      raise NegativeAmount(f"Can't add a negative amount")
     self.balance += amount 
